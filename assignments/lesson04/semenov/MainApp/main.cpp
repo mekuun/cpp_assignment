@@ -4,7 +4,7 @@
 
 int main(){
 	double sex = 6.9;
-	std::cout << square of number " << sex << ": " << square(sex) << '\n';
+	std::cout << "square of number " << sex << ": " << square(sex) << '\n';
 	std::cout << "tripple power of number  " << sex << ": " << cube(sex) << '\n';
 
 	std::string sexy = "dovod";
