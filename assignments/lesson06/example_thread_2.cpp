@@ -2,14 +2,14 @@
 #include <thread>
 #include <chrono>
 
-void функция() {
+void foo() {
     std::cout << "Поток работает!" << std::endl;
     std::this_thread::sleep_for(std::chrono::seconds(2));
     std::cout << "Поток завершен!" << std::endl;
 }
 
 int main() {
-    std::thread t(функция);
+    std::thread t(foo);
     t.detach(); // Отделяем поток, чтобы он работал независимо
 
     std::cout << "Основной поток продолжает работу..." << std::endl;
